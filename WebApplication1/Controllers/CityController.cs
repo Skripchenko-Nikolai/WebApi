@@ -15,13 +15,13 @@ namespace WebApplication1.Controllers
        [HttpGet]
        public List<City> getCity()
        {
-            return City.GetAllCity();
+            return CityRepository.GetAllCity();
        }
 
         [HttpGet("{id}")]
         public City getCityById(int id)
         {
-            return City.GetCityById(id);
+            return CityRepository.GetCityById(id);
         }
     }
 }
